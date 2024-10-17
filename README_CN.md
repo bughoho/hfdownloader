@@ -34,15 +34,16 @@ cloudflare worker代理服务器的搭建方法参考 [这里]()。
 
 在`Huggingface Model Downloader`的基础上增加了反代列表`proxy_list.txt`,可在其中添加自己搭建的cloudflare反代服务器，来实现多服务器并行下载。搭建的服务器越多，理论上可以榨干你的全部下行带宽。我自测1000M宽带实现了跑满100M下行带宽。
 
-
 ### `使用方法`
 
 opensuse:
+
 ```bash
 sudo zypper install -y aria2 git git-lfs && git lfs install
 ```
 
 ubuntu:
+
 ```bash
 sudo apt update
 sudo apt install aria2 git git-lfs

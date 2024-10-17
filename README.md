@@ -1,5 +1,6 @@
 # hfdownloader
 
+[中文](README_CN.md)
 This project comprises two scripts:
 
 1. `hfd.sh`, forked from [Huggingface Model Downloader](https://gist.github.com/padeoe/697678ab8e528b85a2a7bddafea1fa4f), is a command-line downloader for Huggingface based on `aria2/wget`.

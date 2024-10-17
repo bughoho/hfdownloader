@@ -10,7 +10,7 @@ This project comprises two scripts:
 
 ## `cloudflare workers`
 
-For instructions on setting up a cloudflare worker proxy server, please refer to the provided link.
+For instructions on setting up a cloudflare worker proxy server, please refer to the provided [link](https://sirtech.cc/2024/10/17/da-jian-cloudflare-worker-shi-xian-zi-you-xia-zai-huggingface-da-mo-xing/).
 
 ## `hfd.sh`
 
@@ -87,6 +87,8 @@ https://r2.yourdomain.com
 ```
 
 Note that there should be no spaces at the end of each domain name. The script does not currently check for this.
+
+If you're unsure how to set it up, you can refer to this [guide](https://en.sirtech.cc/2024/10/17/setting-up-a-cloudflare-worker-for-unrestricted-huggingface-large-model-downloads/).
 
 Additionally, you can use the script without setting up a proxy server, but the download speed will be similar to the original script.
 

@@ -31,7 +31,7 @@ For instructions on setting up a cloudflare worker proxy server, please refer to
 
 2. `ht-transfer` downloads much faster than the original `huggingface-cli`, but it often gets stuck and cannot be interrupted. Forcing an interruption will result in data loss and restart from scratch.
 
-Modifications:
+### `Modifications`
 
 Based on `Huggingface Model Downloader`, it introduces a reverse proxy list (`proxy_list.txt`) allowing users to specify their own Cloudflare reverse proxy servers for multi-server parallel downloads. Theoretically, utilizing more servers can maximize download bandwidth utilization. I personally tested it with a 1000Mbps connection and achieved a full 100MB/s download speed.
 

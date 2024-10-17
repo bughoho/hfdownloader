@@ -8,7 +8,7 @@
 
 ## `cloudflare workers`
 
-cloudflare worker代理服务器的搭建方法参考 [这里]()。
+cloudflare worker代理服务器的搭建方法参考 [这里](https://sirtech.cc/2024/10/17/da-jian-cloudflare-worker-shi-xian-zi-you-xia-zai-huggingface-da-mo-xing/)。
 
 ## `hfd.sh`
 
@@ -79,7 +79,7 @@ hfd.sh meta-llama/Llama-2-7b --hf_username YOUR_HF_USERNAME_NOT_EMAIL --hf_token
 
 #### `注意`
 
-使用本脚本要自行搭建cloudflare反代服务器（或者其他服务商的也可以），将项目中的`worker.js`复制到你的云服务中去即可，如果不会搭建可以参考[这里]()。
+使用本脚本要自行搭建cloudflare反代服务器（或者其他服务商的也可以），将项目中的`worker.js`复制到你的云服务中去即可，如果不会搭建可以参考[这里](https://sirtech.cc/2024/10/17/da-jian-cloudflare-worker-shi-xian-zi-you-xia-zai-huggingface-da-mo-xing/)。
 搭建好后，把代理域名放进`proxy_list.txt`,像这样：
 
 ```text

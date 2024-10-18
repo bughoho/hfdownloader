@@ -23,12 +23,12 @@ cloudflare worker代理服务器的搭建方法参考 [这里](https://sirtech.c
 7. 📦 简单依赖: 仅依赖 git 和 aria2c/wget。
 8. ⏬ 跳过已下载: 使用 Git LFS 自动区分目标文件的下载状态
 
-### `为什么不使用huggingface-cli和ht-transfer`
+### `为什么不使用huggingface-cli和HF-Ttransfer`
 
 
 1. 下载huggingface上的大模型一般用`huggingface-cli`可以较快的下载，但是经过自测也只能占满下行带宽的10%~20%，但是`huggingface`的CDN服务器不是太稳定(因为有时你分配到的边缘节点很慢)，这会影响`huggingface-cli`的下载速度。所以本脚本的目的是通过自建cloudflare workers来代理huggingface服务器进行并行下载。
 
-2. `ht-transfer`的下载速度比原版`huggingface-cli`要快很多，但是经常会卡住、且无法中断，如果强行中断会丢失数据从零开始。
+2. `HF-Ttransfer`的下载速度比原版`huggingface-cli`要快很多，但是经常会卡住、且无法中断，如果强行中断会丢失数据从零开始。
 
 修改内容：
 

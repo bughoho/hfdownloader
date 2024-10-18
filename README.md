@@ -25,11 +25,11 @@ For instructions on setting up a cloudflare worker proxy server, please refer to
 7. 📦 Simple Dependencies: Only depends on `git` and `aria2c/wget`.
 8. ⏬ Skip Downloaded Files: Automatically identifies the download status of target files using Git LFS.
 
-### `Why not use huggingface-cli and ht-transfer`
+### `Why not use huggingface-cli and HF-Ttransfer`
 
 1. Downloading large models on Huggingface generally uses `huggingface-cli` for faster downloads, but in my testing, it can only utilize 10%~20% of the download bandwidth. However, Huggingface's CDN server is not very stable (because sometimes the assigned edge node is slow), which affects the download speed of `huggingface-cli`. This script aims to address this by enabling parallel downloads through a user-configured Cloudflare Worker acting as a proxy for the Huggingface server.
 
-2. `ht-transfer` downloads much faster than the original `huggingface-cli`, but it often gets stuck and cannot be interrupted. Forcing an interruption will result in data loss and restart from scratch.
+2. `HF-Ttransfer` downloads much faster than the original `huggingface-cli`, but it often gets stuck and cannot be interrupted. Forcing an interruption will result in data loss and restart from scratch.
 
 ### `Modifications`
 
@@ -38,11 +38,13 @@ Based on `Huggingface Model Downloader`, it introduces a reverse proxy list (`pr
 ### `Usage`
 
 opensuse:
+
 ```bash
 sudo zypper install -y aria2 git git-lfs && git lfs install
 ```
 
 ubuntu:
+
 ```bash
 sudo apt update
 sudo apt install aria2 git git-lfs

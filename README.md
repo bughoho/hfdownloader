@@ -10,7 +10,7 @@ This project contains two scripts:
 
 ## `cloudflare workers`
 
-For instructions on setting up a cloudflare worker proxy server, please refer to the provided [link](https://sirtech.cc/2024/10/17/da-jian-cloudflare-worker-shi-xian-zi-you-xia-zai-huggingface-da-mo-xing/).
+For instructions on setting up a cloudflare worker proxy server, please refer to the provided [link](https://en.sirtech.cc/2024/10/17/setting-up-a-cloudflare-worker-to-freely-download-large-hugging-face-models/).
 
 ## `hfd.sh`
 
